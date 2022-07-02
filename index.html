@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript.info</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00d589803f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="bg-dark ">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid" id="headerWrapper">
+          <!-- .......globe icon and EN text..........................  -->
+            <div class="globeIconWrapper" >
+              <span class="fas fa-globe " id="globe" style="margin-right: 1em;"></span>
+              <p class="text-muted" id="english">EN</p>
+            </div>
+            <div class="logoWwrapper">
+              <a class="navbar-brand" href="#">JAVASCRIPT.INFO</a>
+            </div>
+          <!-- ..................button to move collapsible items................... -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <!-- ..............................collapsible items.....aligned perfectly......................... -->
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" >
+              <ul class="navbar-nav">
+                 <li class="nav-item">
+                  <a class="nav-link " id="button" href="#">Buy EPUB/PDF</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="fas fa-user"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-lightbulb"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="fas fa-search"></span></a>
+                </li>
+              </ul>
+          </div>
+          <!-- .....................................collapsible items ends here................................... -->
+
+        </div>
+      </nav>
+      <div class="body_part container">
+        
+       <div class="container-md d-lg-flex firstContainer">
+        <div class="col">
+          <!-- .......................left contents.............................. -->
+          <div class="leftContents">
+            <p class=" h3 text-light">The Modern JavaScript Tutorial</p>
+            <p class="text-light"> How it's done now. From the basics to advanced topics with simple, but detailed explanations.</p>
+            <!-- .....................search box................................. -->
+            <div class="input-group">
+              <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+              <button type="button" class="btn btn-outline-primary">search</button>
+            </div>
+          </div>
+       </div>
+          <!-- ........................right contents............................. -->
+          <div class="rightContents col d-flex flex-column px-3 justify-content-end">
+            <p class="text-white updated">Last updated on 27 june,2022</p>
+            <!-- .......................BUTTON area -->
+            <div class="button_team_1" >
+              <div class="div_one"><a class="button_right " href="#"><span class="fas fa-book icon"></span> BUY EPUB/PDF </a></div>
+              <div class="div_one"><a class="button_right " href="#">Share:  <span class="fa-brands fa-twitter icon"></span>  <span class="fa-brands fa-facebook"></span> </a></div>
+              <div class="div_one"><a class="button_right " href="#">18026 <span class="fas fa-star icon"></span> github</a></div>
+              <div class="div_one"><a class="button_right " href="#"><span class="fa-brands fa-discord icon"></span> Discord Chat</a></div>
+            </div>
+          </div>
+        </div>
+          <!-- .......................right contents ends here ..................... -->
+        <div class="table_of_contents">
+          <h4 class="text-white">Table of contents</h4>
+          <p class="text-white">Main course contains 2 parts which cover JavaScript as a programming language and working with a<br/> browser. There are also additional series of thematic articles.
+          </p>
+        </div>
+      <!-- ..........................scrollspy area................................-->
+      <div class="scrollspy_area">
+        <div class="m-4 parent">
+          <nav class=" navbar2 navbar navbar-expand navbar-dark bg-dark sticky-top">
+              <div class="container-fluid my_navbar ">
+                  <div class="navbar" id="navbar"> 
+                      <div class="navbar-nav"> 
+                          <a href="#part1" class="nav-item nav-link">PART 1<br>The javascript language</a>
+                          <a href="#part2" class="nav-item nav-link">PART 2<br>Browser: Document, Events, Interfaces</a>
+                          <a href="#part3" class="nav-item nav-link">PART 3<br>Additional articles</a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <!-- end of navbar???? -->
+      <!-- start of contents -->
+      <div class="content_section">
+        <div class="contents">
+          <div class="content_title"><h2 class="text-white" id="part1">The Javascript language</h2></div>
+          <div class="para_content">
+            <p class="text-white">Here we learn JavaScript, starting from scratch and go on to advanced concepts like OOP.<br>
+               We concentrate on the language itself here, with the minimum of environment-specific notes.</p>
+          </div>
+          <!-- first list in first link................................... -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">An Introduction</a></div>
+            <div class="list">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">1.1</span> An Introduction to javascript</div>
+                  <div class="list_subtitle"><span class="text-white">1.2</span> Manuals and specifications</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">1.3</span> Code Editors</div>
+                  <div class="list_subtitle"><span class="text-white">1.4</span> Devoloper console</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of first list in first link............................... -->
+          
+          <!-- start of second list in first link -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">Javascript Fundamentals</a></div>
+            <div class="list2">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">2.1</span> Hello, world!</div>
+                  <div class="list_subtitle"><span class="text-white">2.2</span> Code structure</div>
+                  <div class="list_subtitle"><span class="text-white">2.3</span> The modern mode, "use strict"</div>
+                  <div class="list_subtitle"><span class="text-white">2.4</span> Variables</div>
+                  <div class="list_subtitle"><span class="text-white">2.5</span> Data types</div>
+                  <div class="list_subtitle"><span class="text-white">2.6</span> Interaction: alert, prompt, confirm</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">2.7</span> Type Conversions</div>
+                  <div class="list_subtitle"><span class="text-white">2.8</span> Basic operators, maths</div>
+                  <div class="list_subtitle"><span class="text-white">2.9</span> Comparisons</div>
+                  <div class="list_subtitle"><span class="text-white">2.10</span> Conditional branching: if, '?'</div>
+                  <div class="list_subtitle"><span class="text-white">2.11</span> Logical operators</div>
+                  <div class="list_subtitle"><span class="text-white">2.12</span> Nullish coalescing operator '??'</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">2.13</span> Loops: while and for</div>
+                  <div class="list_subtitle"><span class="text-white">2.14</span> The "switch" statement</div>
+                  <div class="list_subtitle"><span class="text-white">2.15</span> Functions</div>
+                  <div class="list_subtitle"><span class="text-white">2.16</span> Function expressions</div>
+                  <div class="list_subtitle"><span class="text-white">2.17</span> Arrow functions, the basics</div>
+                  <div class="list_subtitle"><span class="text-white">2.18</span> JavaScript specials</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of second list in first link -->
+
+          <!-- start of third list in first link -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">Code quality</a></div>
+            <div class="list3">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">3.1</span> Debugging in the browser</div>
+                  <div class="list_subtitle"><span class="text-white">3.2</span> Coding Style</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">3.3</span> Comments</div>
+                  <div class="list_subtitle"><span class="text-white">3.4</span> Ninja code</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">3.5</span> Automated testing with Mocha</div>
+                  <div class="list_subtitle"><span class="text-white">3.6</span> Polyfills and transpilers</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of third list in first link -->
+        </div>
+
+        <!-- start of second link -->
+        <div class="contents">
+          <div class="content_title"><h2 class="text-white" id="part2">Browser: Document, Events, Interfaces</h2></div>
+          <div class="para_content">
+            <p class="text-white">Learning how to manage the browser page: add elements, manipulate their size and position, dynamically create interfaces and interact with the visitor..</p>
+          </div>
+          <!-- first list in second link................................... -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">Document</a></div>
+            <div class="list2">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">1.1</span> Browser environment, specs</div>
+                  <div class="list_subtitle"><span class="text-white">1.2</span> DOM tree</div>
+                  <div class="list_subtitle"><span class="text-white">1.3</span> Walking the DOM</div>
+                  <div class="list_subtitle"><span class="text-white">1.4</span> Searching: getElement*, querySelector*</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">1.5</span> Node properties: type, tag and contents</div>
+                  <div class="list_subtitle"><span class="text-white">1.6</span> Attributes and properties</div>
+                  <div class="list_subtitle"><span class="text-white">1.7</span> Modifying the document</div>
+                  <div class="list_subtitle"><span class="text-white">1.8</span> Styles and classes</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">1.9</span> Element size and scrolling</div>
+                  <div class="list_subtitle"><span class="text-white">1.10</span> Window sizes and scrolling</div>
+                  <div class="list_subtitle"><span class="text-white">1.11</span> Coordinates</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of first list in second link............................... -->
+          
+          <!-- start of second list in second link -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">Introduction to Events</a></div>
+            <div class="list2">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">2.1</span> Introduction to browser events</div>
+                  <div class="list_subtitle"><span class="text-white">2.2</span> Bubbling and capturing</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">2.3</span> Event delegation</div>
+                  <div class="list_subtitle"><span class="text-white">2.4</span> Browser default actions</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">2.5</span> Dispatching custom events</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of second list in second link -->
+
+          <!-- start of third list in second link -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">UI Events</a></div>
+            <div class="list3">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">3.1</span> Mouse events</div>
+                  <div class="list_subtitle"><span class="text-white">3.2</span> Moving the mouse: mouseover/out, mouseenter/leave</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">3.3</span> Drag'n'Drop with mouse events</div>
+                  <div class="list_subtitle"><span class="text-white">3.4</span> Pointer events</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">3.5</span> Keyboard: keydown and keyup</div>
+                  <div class="list_subtitle"><span class="text-white">3.6</span> Scrolling</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of third list in second link -->
+        </div>
+        <!-- end of second link -->
+
+        <!-- start of third link -->
+        <div class="contents">
+          <div class="content_title"><h2 class="text-white" id="part3">Additional articles</h2></div>
+          <div class="para_content">
+            <p class="text-white">List of extra topics that assume you've covered the first two parts of tutorial. There is no clear hierarchy here, you can read articles in the order you want.</p>
+          </div>
+          <!-- first list in third link................................... -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">Frames and windows</a></div>
+            <div class="list2">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">1.1</span> Popups and window methods</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">1.2</span> Cross-window communication</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">1.3</span> The clickjacking attack</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of first list in third link............................... -->
+          
+          <!-- start of second list in third link -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">An Introduction</a></div>
+            <div class="list">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">2.1</span> ArrayBuffer, binary arrays</div>
+                  <div class="list_subtitle"><span class="text-white">2.2</span> TextDecoder and TextEncoder</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">2.3</span> Blob</div>
+                  <div class="list_subtitle"><span class="text-white">2.4</span> File and FileReader</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of second list in third link -->
+
+          <!-- start of third list in third link -->
+          <div class="list_content">
+            <div class="list_title"><a class="h6 text-white">Network requests</a></div>
+            <div class="list3">
+                <div class="first_line">
+                  <div class="list_subtitle"><span class="text-white">3.1</span> Fetch</div>
+                  <div class="list_subtitle"><span class="text-white">3.2</span> FormData</div>
+                  <div class="list_subtitle"><span class="text-white">3.3</span> Fetch: Download progress</div>
+                  <div class="list_subtitle"><span class="text-white">3.4</span> Fetch: Abort</div>
+                </div>
+                <div class="second_line">
+                  <div class="list_subtitle"><span class="text-white">3.5</span> Fetch: Cross-Origin Requests</div>
+                  <div class="list_subtitle"><span class="text-white">3.6</span> Fetch API</div>
+                  <div class="list_subtitle"><span class="text-white">3.7</span> URL objects</div>
+                  <div class="list_subtitle"><span class="text-white">3.8</span> XMLHttpRequest</div>
+                </div>
+                <div class="third_line">
+                  <div class="list_subtitle"><span class="text-white">3.9</span> Resumable file upload</div>
+                  <div class="list_subtitle"><span class="text-white">3.10</span> Long polling</div>
+                  <div class="list_subtitle"><span class="text-white">3.11</span> WebSocket</div>
+                  <div class="list_subtitle"><span class="text-white">3.12</span> erver Sent Events</div>
+                </div>
+            </div>
+          </div>
+          <!-- end of third list in third link -->
+        </div>
+        <!-- end of third link -->
+    
+      </div>
+      <!-- end of contents -->
+      <!-- comment -->
+      </div>
+      <div class="comment-section">
+        <div class="comment_header">
+          <div class="comment_title">
+            <span class="fas fa-comment"></span>
+            <span class="text-white">Comments</span>
+          </div>
+          <div class="read_this">
+            <p class="text-white" id="readMore">Read this before commenting..</p>
+          </div>
+        </div>
+        <div class="read" id="readPart">
+          <ul class="text-white">
+            <li>If you have suggestions what to improve - please  submit a <a>github issue</a> or pull request instead of commenting</li>
+            <li>If you can't understand something in the article-please elaborate</li>
+    
+            <li>To insert few lines of code use code tag,for several lines-wrap them in pre tag,for more than 10 lines of code use  a sandbox(plnkr,jsbin,codepen)</li>
+    
+          </ul>
+        </div>
+        <div class="commentBody">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" id="navTop">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">468 comments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">javascript.info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fas fa-lock"></span>Disqus's privacy policy</a>
+                  </li>  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Login</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Disqus</a></li>
+                      <li><a class="dropdown-item" href="#">facebook</a></li>
+                      <li><a class="dropdown-item" href="#">Twitter</a></li>
+                      <li><a class="dropdown-item" href="#">Google</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <form>
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name" onclick="displayRest()">
+            </div>
+            <div class="rest_form" id="rest_form">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- top top button -->
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+ 
+
+
+  <script src="script.js"></script>
+</body>
+</html>
